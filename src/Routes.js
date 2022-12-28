@@ -41,8 +41,8 @@ export default function AppRoutes() {
         >
           <Tab.Screen name='Produtos' component={Servicos} />
           <Tab.Screen name='Carrinho' component={Carrinho} />
-        </Tab.Navigator>
-      </CarProductsProvider>
-    </NavigationContainer>
+      </Tab.Navigator>
+    </CarProductsProvider>
+  </NavigationContainer>
   )
 }
