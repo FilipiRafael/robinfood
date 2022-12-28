@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
 import { Text, View, Image } from 'react-native';
 import CampoInteiro from '../../../Components/CampoInteiro';
 import Botao from '../../../Components/Botao';
 
+import { CarProductsContext } from '../../../contexts/carproducts';
+
 import estilos from './estilos';
 
-export default function Item({ nome, preco, descricao, imagem, quantidade: quantidadeInicial }) {
+export default function Item({ id, nome, preco, descricao, imagem, quantidade: quantidadeInicial }) {
   const [quantidade, setQuantidade] = useState(quantidadeInicial);
   const [total, setTotal] = useState(preco * quantidadeInicial);
 
@@ -18,6 +20,8 @@ export default function Item({ nome, preco, descricao, imagem, quantidade: quant
   const calculaTotal = (novaQuantidade) => {
     setTotal(novaQuantidade * preco);
   };
+
+  const { cartProducts, setCartProducts } = useContext(CarProductsContext);
 
   return (
     <>
@@ -50,7 +54,12 @@ export default function Item({ nome, preco, descricao, imagem, quantidade: quant
             </Text>
           </View>
         </View>
-        <Botao valor='Remover do Carrinho' acao={() => {}} />
+        <Botao valor='Remover do Carrinho' acao={() => {
+          const actualCartProducts = [...cartProducts];
+          const productDeletedIndex = actualCartProducts.findIndex((product) => product.id === id);
+          actualCartProducts.splice(productDeletedIndex, 1);
+          setCartProducts(actualCartProducts);
+        }} />
       </View>
       <View style={estilos.divisor} />
     </>

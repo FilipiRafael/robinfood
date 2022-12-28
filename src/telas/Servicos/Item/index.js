@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
 import { Text, View, TouchableOpacity, Image } from 'react-native';
 import CampoInteiro from '../../../Components/CampoInteiro';
@@ -6,7 +6,9 @@ import Botao from '../../../Components/Botao';
 
 import estilos from './estilos';
 
-export default function Item({ nome, preco, descricao, imagem, exibirMensagem }) {
+import { CarProductsContext } from '../../../contexts/carproducts';
+
+export default function Item({ id, nome, preco, descricao, imagem, exibirMensagem }) {
   const [quantidade, setQuantidade] = useState(1);
   const [total, setTotal] = useState(preco);
   const [expandir, setExpandir] = useState(false);
@@ -24,6 +26,8 @@ export default function Item({ nome, preco, descricao, imagem, exibirMensagem })
     setExpandir(!expandir);
     atualizaQuantidadeTotal(1);
   };
+
+  const { cartProducts, setCartProducts } = useContext(CarProductsContext);
 
   return (
     <>
@@ -56,7 +60,23 @@ export default function Item({ nome, preco, descricao, imagem, exibirMensagem })
             </Text>
           </View>
         </View>
-        <Botao valor='Adicionar ao Carrinho' acao={() => exibirMensagem(true)} />
+        <Botao
+          valor='Adicionar ao Carrinho'
+          acao={() => {
+            exibirMensagem(true);
+            if (!cartProducts.find((product) => product.id === id)) {
+              const product = {
+                id,
+                nome,
+                preco,
+                descricao,
+                imagem,
+                quantidade
+              };
+              setCartProducts([...cartProducts, product]);
+            }
+          }}
+        />
       </View>}
       <View style={estilos.divisor} />
     </>
