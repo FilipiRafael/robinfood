@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import CampoInteiro from '../../../Components/CampoInteiro';
 import Botao from '../../../Components/Botao';
 
 import estilos from './estilos';
 
-export default function Item({ nome, preco, descricao, quantidade: quantidadeInicial }) {
+export default function Item({ nome, preco, descricao, imagem, quantidade: quantidadeInicial }) {
   const [quantidade, setQuantidade] = useState(quantidadeInicial);
   const [total, setTotal] = useState(preco * quantidadeInicial);
 
@@ -22,14 +22,17 @@ export default function Item({ nome, preco, descricao, quantidade: quantidadeIni
   return (
     <>
       <View style={estilos.informacao}>
-        <Text style={estilos.nome}>{nome}</Text>
-        <Text style={estilos.descricao}>{descricao}</Text>
-        <Text style={estilos.preco}>
-          {Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-          }).format(preco)}
-        </Text>
+        <Image source={imagem} style={estilos.imagem} />
+        <View>
+          <Text style={estilos.nome}>{nome}</Text>
+          <Text style={estilos.descricao}>{descricao}</Text>
+          <Text style={estilos.preco}>
+            {Intl.NumberFormat('pt-BR', {
+              style: 'currency',
+              currency: 'BRL'
+            }).format(preco)}
+          </Text>
+        </View>
       </View>
       <View style={estilos.carrinho}>
         <View>
