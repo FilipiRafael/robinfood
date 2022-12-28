@@ -63,7 +63,7 @@ export default function Servicos() {
 
   return (
     <>
-      {exibeMensagem && <Banner />}
+      {exibeMensagem && <Banner mensagem='Pedido adicionado ao carrinho!' />}
       <FlatList
         removeClippedSubViews={false}
         data={servicos}
