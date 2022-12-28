@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FlatList } from 'react-native';
 
 import Item from './Item';
+import Banner from '../../Components/Banner';
 
 const servicos = [
   {
@@ -49,13 +50,25 @@ const servicos = [
 ];
 
 export default function Servicos() {
+
+  const [exibeMensagem, setExibeMensagem] = useState(false);
+
+  useEffect(() => {
+    if (exibeMensagem) {
+      setTimeout(() => {
+        setExibeMensagem(false);
+      }, 1000);
+    }
+  }, [exibeMensagem]);
+
   return (
     <>
+      {exibeMensagem && <Banner />}
       <FlatList
         removeClippedSubViews={false}
         data={servicos}
         renderItem={({ item }) => (
-          <Item {...item} />
+          <Item {...item} exibirMensagem={setExibeMensagem} />
         )}
         keyExtractor={({id}) => String(id)}
       />

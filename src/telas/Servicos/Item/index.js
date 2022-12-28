@@ -6,7 +6,7 @@ import Botao from '../../../Components/Botao';
 
 import estilos from './estilos';
 
-export default function Item({ nome, preco, descricao, imagem }) {
+export default function Item({ nome, preco, descricao, imagem, exibirMensagem }) {
   const [quantidade, setQuantidade] = useState(1);
   const [total, setTotal] = useState(preco);
   const [expandir, setExpandir] = useState(false);
@@ -56,7 +56,7 @@ export default function Item({ nome, preco, descricao, imagem }) {
             </Text>
           </View>
         </View>
-        <Botao valor='Adicionar ao Carrinho' acao={() => {}} />
+        <Botao valor='Adicionar ao Carrinho' acao={() => exibirMensagem(true)} />
       </View>}
       <View style={estilos.divisor} />
     </>
