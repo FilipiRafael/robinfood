@@ -3,7 +3,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Servicos from './telas/Servicos';
+// import Servicos from './telas/Servicos';
+import StackRoutes from './StackRoutes';
 import Carrinho from './telas/Carrinho';
 
 import CarProductsProvider from './contexts/carproducts';
@@ -39,7 +40,7 @@ export default function AppRoutes() {
             keyboardHidesTabBar: true
           }}
         >
-          <Tab.Screen name='Produtos' component={Servicos} />
+          <Tab.Screen name='Produtos' component={StackRoutes} />
           <Tab.Screen name='Carrinho' component={Carrinho} />
       </Tab.Navigator>
     </CarProductsProvider>

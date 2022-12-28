@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 
 export default function StackRoutes() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name='ServicosScreen' component={Servicos} />
       <Stack.Screen name='CompraFinalizada' component={CompraFinalizada} />
     </Stack.Navigator>
