@@ -15,6 +15,7 @@ export default (pequeno, invertido) => StyleSheet.create({
     shadowOpacity: 0.23,
     shadowRadius: 2.62,
     elevation: 4,
+    borderRadius: 3
   },
   valor: {
     fontWeight: 'bold',

@@ -6,6 +6,7 @@ export default StyleSheet.create({
     height: 25,
     borderWidth: 1,
     borderColor: cores.escuro,
-    textAlign: 'center'
+    textAlign: 'center',
+    borderRadius: 3
   }
 });
