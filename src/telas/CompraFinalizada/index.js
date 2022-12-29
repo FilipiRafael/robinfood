@@ -41,7 +41,7 @@ export default function CompraFinalizada() {
         estilos={estilos.botao}
         acao={() => {
           setCartProducts([]);
-          navigation.navigate('ServicosScreen');
+          navigation.navigate('Produtos');
         }}
       />
     </View>
