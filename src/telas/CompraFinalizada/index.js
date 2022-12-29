@@ -22,6 +22,7 @@ export default function CompraFinalizada() {
 
   useEffect(() => {
     startAnimation();
+    setCartProducts([]);
   }, []);
 
   return (
@@ -40,7 +41,6 @@ export default function CompraFinalizada() {
         valor='Retornar aos produtos'
         estilos={estilos.botao}
         acao={() => {
-          setCartProducts([]);
           navigation.navigate('Produtos');
         }}
       />

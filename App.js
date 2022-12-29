@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import AppRoutes from './src/Routes';
 import StackRoutes from './src/StackRoutes';
 import TelaPadrao from './src/Components/TelaPadrao';
 
@@ -15,7 +14,6 @@ export default function App() {
 
   return (
     <TelaPadrao>
-      {/* <AppRoutes /> */}
       <StackRoutes />
     </TelaPadrao>
   );
