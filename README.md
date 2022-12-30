@@ -2,7 +2,7 @@
 A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento mobile com React Native e mais tecnologias que envolvendo a concepção, desenvolvimento e entrega do produto.
 
 ## 💡 Ideia
-O projeto tem o objetivo final de ser um App para contração de serviços de PetShop.
+O projeto tem o objetivo final de ser um App de delivery.
 
 ## 🚀 Novas versões
 Conforme vou adquirindo novas habilidades, irei atualizando o projeto em novas versões. 
@@ -10,27 +10,31 @@ Conforme vou adquirindo novas habilidades, irei atualizando o projeto em novas v
 ## 🚀 Tecnologias utilizadas
 - Javascript
 - React Native
+- Lottie React Native
 - Reactotron
 - Expo
 
 ## 🚀 Screenshot
-<img width="1342" alt="app" src="https://user-images.githubusercontent.com/61629642/209704393-5d40cdd7-4b1e-4a68-bdff-7ec4c765b64e.png">
 
-https://user-images.githubusercontent.com/61629642/209704511-abe4aa7e-4b76-4876-a725-679a43bed27e.mp4
+<div style="display:flex;">
+  <img width="300" src="https://user-images.githubusercontent.com/61629642/210022738-ecf175fc-b596-4511-b12c-f33c80545dde.png">
+  <img width="300" src="https://user-images.githubusercontent.com/61629642/210022735-9e5f76d3-13a8-44d8-8436-893499726339.png">
+  <img width="300" src="https://user-images.githubusercontent.com/61629642/210022733-d6cd48bc-58e4-44ac-b435-79fd41cc8cef.png">
+</div>
 
-# Petshop App
+# RobinFood
 
-O projeto tem o objetivo final de ser um App para contração de serviços de PetShop.
+O projeto tem o objetivo final de ser um App de delivery.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **Pet Shop App**
+| :sparkles: Nome        | **RobinFood**
 | :label: Tecnologias | Javascript, React Native, Reactotron, Expo (tecnologias utilizadas)
-| :rocket: URL         | https://github.com/FilipiRafael/petshop-app
-| :fire: Desafio     | https://github.com/FilipiRafael/petshop-app
+| :rocket: URL         | https://github.com/FilipiRafael/robinfood
+| :fire: Desafio     | https://github.com/FilipiRafael/robinfood
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://user-images.githubusercontent.com/61629642/209704393-5d40cdd7-4b1e-4a68-bdff-7ec4c765b64e.png#vitrinedev)
+![](https://user-images.githubusercontent.com/61629642/210022738-ecf175fc-b596-4511-b12c-f33c80545dde.png#vitrinedev)
 
 ## Detalhes do projeto
 
