@@ -17,9 +17,9 @@ Conforme vou adquirindo novas habilidades, irei atualizando o projeto em novas v
 ## 🚀 Screenshot
 
 <div style="display:flex;">
-  <img width="300" src="https://user-images.githubusercontent.com/61629642/210022738-ecf175fc-b596-4511-b12c-f33c80545dde.png">
-  <img width="300" src="https://user-images.githubusercontent.com/61629642/210022735-9e5f76d3-13a8-44d8-8436-893499726339.png">
-  <img width="300" src="https://user-images.githubusercontent.com/61629642/210022733-d6cd48bc-58e4-44ac-b435-79fd41cc8cef.png">
+  <img width="250" src="https://user-images.githubusercontent.com/61629642/210022738-ecf175fc-b596-4511-b12c-f33c80545dde.png">
+  <img width="250" src="https://user-images.githubusercontent.com/61629642/210022735-9e5f76d3-13a8-44d8-8436-893499726339.png">
+  <img width="250" src="https://user-images.githubusercontent.com/61629642/210022733-d6cd48bc-58e4-44ac-b435-79fd41cc8cef.png">
 </div>
 
 # RobinFood
